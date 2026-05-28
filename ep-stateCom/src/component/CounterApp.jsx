@@ -9,10 +9,8 @@ const CounterApp = () => {
         console.log(100)
         return 100;
     }
-
     //returnState() - if call the function inside state, for every rendering, function call will happen.  like below:
     // let [sample, setSample] = useState(returnState ());
-
     // if we pass function with call inside anonymous function, call won't happend for each render
     let [sample,setSample] = useState(()=>{return returnState()})
 
