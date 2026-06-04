@@ -2,3 +2,4 @@ npm create vite@latest
 npm install
 npm install styled-components
 npm install react-icons
+npm i react-router-dom
