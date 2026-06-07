@@ -1,0 +1,34 @@
+import TodoApp from "./component/TodoApp"
+import Home from "./component/Home"
+import Login from "./component/Login"
+import Products from "./component/Products"
+import SignUp from "./component/SignUp"
+import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom"
+import ProductList from "./component/ProductList"
+import { ProductDetails } from "./component/ProductDetails"
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import NavBar from "./component/Navbar"
+
+function App() {
+  let user = "sush"
+  return (
+   <div>
+   
+   <Router>
+    <NavBar/>
+     <Routes>
+       <Route path="/" element={<Home/>} />
+       <Route path="/products" element={<Products/>}>
+          <Route index element={<ProductList/>}/>
+          <Route path="list" element={<ProductList/>}/>
+          <Route path="details" element={<ProductDetails/>}  />
+       </Route>
+       <Route path="/signup" element={<SignUp/>} />
+       <Route path="/login/:newUser" element={<Login/>} />
+       <Route path="/todoapp" element={<TodoApp/>} />
+     </Routes>
+   </Router>
+   </div>
+  )
+}
+export default App

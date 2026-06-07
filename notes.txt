@@ -3,3 +3,12 @@ npm install
 npm install styled-components
 npm install react-icons
 npm i react-router-dom
+npm install react-bootstrap bootstrap
+npm i json-server
+
+
+// after install bootstrap if styles not applied import bootsrap.min.css file from nodemodules
+
+//to start server and restapi: 
+1.open data folder in terminial 
+2.json-server --watch db.json --port 4000 ( if we got error: open powershell - Get ExecutionPolicy - Set-ExecutionPolicy RemoteSigned - Y)
