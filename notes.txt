@@ -6,7 +6,9 @@ npm i react-router-dom
 npm install react-bootstrap bootstrap
 npm i json-server 
 npm install react-loading-indicators
-
+npm i axios
+npm install @mui/material @emotion/react @emotion/styled
+npm install sweetalert2
 
 // after install bootstrap if styles not applied import bootsrap.min.css file from nodemodules
 
