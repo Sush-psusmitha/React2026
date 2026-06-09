@@ -20,7 +20,6 @@ function App() {
        case Counter_act.REST : 
          return {...state, count: 0};
         default : return state
-
      }
   }
 

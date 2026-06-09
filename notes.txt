@@ -9,9 +9,11 @@ npm install react-loading-indicators
 npm i axios
 npm install @mui/material @emotion/react @emotion/styled
 npm install sweetalert2
+npm install @reduxjs/toolkit
+npm install react-redux
 
 // after install bootstrap if styles not applied import bootsrap.min.css file from nodemodules
 
 //to start server and restapi: 
 1.open data folder in terminial 
-2.json-server --watch db.json --port 4000 ( if we got error: open powershell - Get ExecutionPolicy - Set-ExecutionPolicy RemoteSigned - Y)
+2.json-server --watch db.json --port 4000 ( if we got error: open powershell - Get ExecutionPolicy - Set-ExecutionPolicy RemoteSigned - Y )
