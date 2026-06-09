@@ -66,8 +66,7 @@ let newProductList = products.filter(product => product.id !== id)
           <Card.Title>{product.title}</Card.Title>
           <Card.Text style={{overflow: "scroll",height:"180px"}}>${product.price}</Card.Text>
         </Card.Body>
-        <Card.Footer style={{display: "flex", justifyContent: "space-evenly", alignItems: "center"}}>
-         
+        <Card.Footer style={{display: "flex", justifyContent: "space-evenly", alignItems: "center"}}>        
         <Button variant="primary"><MdAddShoppingCart /></Button>
         <Button variant="secondary" onClick={()=>{
            navigate(`/update/${product.id}`)
