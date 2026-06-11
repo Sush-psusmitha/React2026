@@ -26,7 +26,9 @@ let navigate =  useNavigate()
             <Nav.Link as={Link} to="/products">Products</Nav.Link>
             <Nav.Link as={Link} to="/todoapp">TodoApp</Nav.Link>
           </Nav>
-          <Button variant='contained' color="warning" onClick={()=>navigate("/wishlist")}><MdShoppingCart  /></Button>
+          <Button variant="warning" onClick={() => navigate("/wishlist")}>
+  <MdShoppingCart />
+</Button>
           <Form className="d-flex">
             <Form.Control
               type="search"

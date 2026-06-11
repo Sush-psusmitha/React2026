@@ -14,6 +14,9 @@ import UpdateProduct from "./component/UpdateProduct"
 import WishList from "./component/WishList"
 
 
+if(!localStorage.getItem("cart")){
+localStorage.setItem("cart", JSON.stringify([]))
+}
 function App() {
   let user = "sush"
   return (
@@ -41,3 +44,14 @@ function App() {
   )
 }
 export default App
+
+// to store:
+// localStorage.setItem("cart", JSON.stringify([{ id: 1, name: sush },]));
+
+// To get:
+// let dataFromWeb = JSON.parse( localStorage.getItem("cart"));
+// console.log(typeof dataFromWeb)
+
+// to delete: 
+// localStorage.removeItem("cart")
+
